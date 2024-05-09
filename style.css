@@ -46,7 +46,7 @@ main{
 }
 
 .sfondo {
-	min-height: 300px;
+	min-height: 150px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -82,7 +82,7 @@ h1{
 
 .pianidropbox{
     min-height: 600px;
-	width: 50%;
+	width: 60%;
     margin: 50px auto;
     /* debug */
     background-color: chartreuse;
@@ -95,6 +95,7 @@ h2{
 
 .offer{
     display: flex;
+    justify-content: space-between;
 }
 
 .pianidropbox span{
@@ -103,9 +104,28 @@ h2{
 
 .pianidropbox .colonna{
     min-height: 300px;
-    width: calc(100%/3);
+    width: calc(90%/3);
     margin: 25px 0;
     /* debug */
     background-color: pink;
     border: black solid 2px;
+}
+
+.colonna h5{
+    /* debug */
+    border: black solid 2px;
+    text-align: center;
+}
+
+hr{
+    width: 30%;
+}
+
+.colonnareverce{
+    min-height: 20px;
+	width: 60%;
+    margin: 50px auto;
+    /* debug */
+    background-color: rgb(9, 79, 220);
+    border: rgb(255, 245, 245) solid 3px;
 }
