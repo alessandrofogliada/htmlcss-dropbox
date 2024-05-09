@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Regole Header */
+
+.heading{
+    height: 70px;
+    width: 100%;
+    /* debug */
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+
+.heading .left{
+    min-height: 30px;
+    width: calc(100%/3);
+    padding-top: 23px;
+    /* debug */
+    background-color: yellow;
+    color: black;
+    border: black solid 2px;
+}
+
+.heading .right{
+    min-height: 30px;
+    width: calc(100%/3);
+    padding-top: 23px;
+    /* debug */
+    background-color: yellow;
+    color: black;
+    border: black solid 2px;
+}
+
+
+/* Regole Main */
+
+main{
+    height: 100vh;
+}
+
+.sfondo {
+	min-height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+    /* debug */
+    background-color: aqua;
+}
+
+h1{
+    margin: 45px 191px 35px;
+    width: 60%;
+    font-size: 50px;
+}
+
+.contain25{
+    width: 25%;
+    margin-right: 334px;
+    /* debug */
+    background-color: blueviolet;
+}
+
+.picturesabsolute {
+	width: 40%;
+	min-height: 225px;
+	position: absolute;
+	background-color: brown;
+	top: 252px;
+	right: 125px;
+    /* debug */
+    background-color: brown;
+}
