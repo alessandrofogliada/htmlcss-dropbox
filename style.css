@@ -79,3 +79,33 @@ h1{
     /* debug */
     background-color: brown;
 }
+
+.pianidropbox{
+    min-height: 600px;
+	width: 50%;
+    margin: 50px auto;
+    /* debug */
+    background-color: chartreuse;
+    border: black solid 3px;
+}
+
+h2{
+    margin-bottom: 30px ;
+}
+
+.offer{
+    display: flex;
+}
+
+.pianidropbox span{
+    margin-right: 30px;
+}
+
+.pianidropbox .colonna{
+    min-height: 300px;
+    width: calc(100%/3);
+    margin: 25px 0;
+    /* debug */
+    background-color: pink;
+    border: black solid 2px;
+}
