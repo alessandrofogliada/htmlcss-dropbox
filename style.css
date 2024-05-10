@@ -122,10 +122,51 @@ hr{
 }
 
 .colonnareverce{
-    min-height: 20px;
-	width: 60%;
+    min-height: 200px;
+	width: 100%;
     margin: 50px auto;
     /* debug */
     background-color: rgb(9, 79, 220);
     border: rgb(255, 245, 245) solid 3px;
+}
+
+.row{
+    width: 60%;
+    min-height: 400px;
+    margin:0 auto;
+    display: flex;
+    /* debug */
+    background-color: red;
+    border: black solid 2px;
+}
+
+.row .uno{
+    width: 60%;
+    /* debug */
+    background-color: orange;
+}
+
+.row .due{
+    width: 40%;
+    /* debug */
+    background-color: blue;
+}
+
+.containerquadrati{
+    width: 60%;
+    min-height: 400px;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* debug */
+    background-color: rgb(255, 0, 0);
+    border: black solid 2px;
+}
+
+.containerquadrati .uno{
+    width: 33%;
+    min-height: 100px;
+    /* debug */
+    background-color: yellow;
+    border: black solid 2px;
 }
