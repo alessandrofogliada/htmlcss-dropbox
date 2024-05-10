@@ -1,3 +1,5 @@
+/* regole generali */
+
 *{
     padding: 0;
     margin: 0;
@@ -168,5 +170,59 @@ hr{
     min-height: 100px;
     /* debug */
     background-color: yellow;
+    border: black solid 2px;
+}
+
+.info{
+    width: 60%;
+    min-height: 100px;
+    margin: 100px auto;
+
+    /* debug */
+    background-color: greenyellow;
+    border: black solid 2px;
+}
+
+.sponsor{
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    /* debug */
+    background-color: violet;
+    border: black solid 2px;
+}
+
+.sponsor .info{
+    width: 34%;
+    min-height: 250px;
+    /* debug */
+    background-color:green;
+    border: black solid 2px;
+}
+
+.sponsor .left{
+    width: 33%;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    /* debug */
+    background-color:orange;
+    border: black solid 2px;
+} 
+
+.designit{
+    width: 50%;
+    min-height: 125px;
+    /* debug */
+    background-color:rgb(238, 255, 0);
+    border: black solid 2px;
+}
+.sponsor .right{
+    width: 33%;
+    min-height: 250px; 
+    display: flex;
+    flex-wrap: wrap;
+    /* debug */
+    background-color: blue;
     border: black solid 2px;
 }
