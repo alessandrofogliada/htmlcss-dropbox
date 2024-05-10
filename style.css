@@ -252,3 +252,11 @@ footer .sfondo {
 	display: flex;
 	flex-direction: column;
 }
+
+.lingua{
+    min-height: 100px;
+    width: 100%;
+    /* debug */
+    background-color: blue;
+    border: solid black 2px;
+}
