@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+}
+
 /* Regole Header */
 
 .heading{
@@ -23,7 +27,6 @@
 .heading .left{
     min-height: 30px;
     width: calc(100%/3);
-    padding-top: 23px;
     /* debug */
     background-color: yellow;
     color: black;
@@ -33,7 +36,6 @@
 .heading .right{
     min-height: 30px;
     width: calc(100%/3);
-    padding-top: 23px;
     /* debug */
     background-color: yellow;
     color: black;
@@ -43,9 +45,6 @@
 
 /* Regole Main */
 
-main{
-    height: 100vh;
-}
 
 .sfondo {
 	min-height: 150px;
@@ -192,7 +191,7 @@ hr{
     border: black solid 2px;
 }
 
-.sponsor .info{
+ .info{
     width: 34%;
     min-height: 250px;
     /* debug */
@@ -200,7 +199,7 @@ hr{
     border: black solid 2px;
 }
 
-.sponsor .left{
+ .left{
     width: 33%;
     min-height: 250px;
     display: flex;
@@ -217,7 +216,8 @@ hr{
     background-color:rgb(238, 255, 0);
     border: black solid 2px;
 }
-.sponsor .right{
+
+.right{
     width: 33%;
     min-height: 250px; 
     display: flex;
@@ -225,4 +225,30 @@ hr{
     /* debug */
     background-color: blue;
     border: black solid 2px;
+}
+
+footer .sfondo {
+    min-height: 300px;
+    /* debug */
+    background-color: brown;
+    border: black solid 2px;
+}
+
+.sfondo hr{
+    width: 60%;
+}
+
+.infofinali{
+    width: 100%;
+    min-height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* debug */
+    background-color: black; 
+}
+
+.colonnina {
+	display: flex;
+	flex-direction: column;
 }
