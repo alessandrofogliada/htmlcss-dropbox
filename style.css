@@ -10,17 +10,25 @@ body{
     height: 100vh;
 }
 
+button {
+	background-color: #0061ff;
+	color: white;
+	min-width: 65px;
+	min-height: 35px;
+    border: white;
+}
+
 /* Regole Header */
 
 .heading{
     height: 70px;
     width: 100%;
-    /* debug */
-    background-color: blue;
-    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* debug */
+    /* background-color: blue;
+    color: rgb(255, 255, 255); */
 }
  
 
@@ -28,18 +36,18 @@ body{
     min-height: 30px;
     width: calc(100%/3);
     /* debug */
-    background-color: yellow;
+    /* background-color: yellow;
     color: black;
-    border: black solid 2px;
+    border: black solid 2px; */
 }
 
 .heading .right{
     min-height: 30px;
     width: calc(100%/3);
     /* debug */
-    background-color: yellow;
+    /* background-color: yellow;
     color: black;
-    border: black solid 2px;
+    border: black solid 2px; */
 }
 
 
@@ -53,8 +61,7 @@ body{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-    /* debug */
-    background-color: aqua;
+    background-color: #b4d0e7;
 }
 
 h1{
@@ -63,31 +70,57 @@ h1{
     font-size: 50px;
 }
 
-.contain25{
-    width: 25%;
-    margin-right: 334px;
+.container{
+    width: 65%;
+    min-height: 250px;
+    display: flex;
     /* debug */
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 
-.picturesabsolute {
-	width: 40%;
+.container button{
+    margin: 27px 0;
+}
+
+.colonna button {
+	margin: 30px 0 15px 0;
+}
+
+.textheader {
+    width: 40%;
 	min-height: 225px;
-	position: absolute;
-	background-color: brown;
-	top: 252px;
-	right: 125px;
+    padding: 0 88px;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     /* debug */
-    background-color: brown;
+    /* background-color: green;
+    border: black solid 2px; */
+}
+
+.layoutimg {
+	width: 60%;
+	min-height: 125px;
+
+    /* debug */
+    /* background-color: brown;
+    border: black solid 2px; */
+}
+
+.picture{
+    height: 400px;
 }
 
 .pianidropbox{
     min-height: 600px;
-	width: 60%;
+	width: 55%;
     margin: 50px auto;
+    line-height: 40px;
     /* debug */
-    background-color: chartreuse;
-    border: black solid 3px;
+    /* background-color: chartreuse;
+    border: black solid 3px; */
 }
 
 h2{
@@ -103,23 +136,29 @@ h2{
     margin-right: 30px;
 }
 
-.pianidropbox .colonna{
-    min-height: 300px;
-    width: calc(90%/3);
-    margin: 25px 0;
-    /* debug */
-    background-color: pink;
-    border: black solid 2px;
+.pianidropbox .colonna {
+	min-height: 300px;
+	width: calc(90%/3);
+	margin: 25px 0;
+	border: grey solid 1px;
+	padding-left: 35px;
+}
+
+h4{
+    text-align: center;
 }
 
 .colonna h5{
-    /* debug */
-    border: black solid 2px;
-    text-align: center;
+    margin-bottom: 15px;
+}
+
+.greytext{
+    color: grey;
 }
 
 hr{
     width: 30%;
+    margin: 15px 0 40px 0;
 }
 
 .colonnareverce{
@@ -199,7 +238,7 @@ hr{
     border: black solid 2px;
 }
 
- .left{
+ .sinistra{
     width: 33%;
     min-height: 250px;
     display: flex;
@@ -217,7 +256,7 @@ hr{
     border: black solid 2px;
 }
 
-.right{
+.destra{
     width: 33%;
     min-height: 250px; 
     display: flex;
