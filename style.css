@@ -18,6 +18,10 @@ button {
     border: white;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 /* Regole Header */
 
 .heading{
@@ -127,6 +131,14 @@ h2{
     margin-bottom: 30px ;
 }
 
+h3{
+    font-size: 30px;
+}
+
+h4{
+    text-align: center;
+}
+
 .offer{
     display: flex;
     justify-content: space-between;
@@ -142,10 +154,6 @@ h2{
 	margin: 25px 0;
 	border: grey solid 1px;
 	padding-left: 35px;
-}
-
-h4{
-    text-align: center;
 }
 
 .colonna h5{
@@ -166,34 +174,60 @@ hr{
 	width: 100%;
     margin: 50px auto;
     /* debug */
-    background-color: rgb(9, 79, 220);
-    border: rgb(255, 245, 245) solid 3px;
+   /* background-color: rgb(9, 79, 220); */
+    border: grey solid 3px;
 }
 
+.colonnareverce p{
+    margin-top: 20px;
+}
+
+.colonnareverce h4{
+    margin: grey solid 1px;
+}
+
+
 .row{
-    width: 60%;
+    width: 55%;
     min-height: 400px;
     margin:0 auto;
     display: flex;
     /* debug */
-    background-color: red;
-    border: black solid 2px;
-}
+    /* background-color: red;
+    /* border: black solid 2px; */
+} 
 
 .row .uno{
     width: 60%;
+    height: 710px;
     /* debug */
     background-color: orange;
 }
 
-.row .due{
-    width: 40%;
+.row .due {
+	width: 40%;
+	align-items: flex-start;
+	padding-right: 300px;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 25px;
     /* debug */
     background-color: blue;
 }
 
+.row h4{
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.row button{
+    margin-top: 25px;
+    background-color: white;
+    border: grey solid 1px;
+    color: grey;
+}
 .containerquadrati{
-    width: 60%;
+    width: 55%;
     min-height: 400px;
     margin:0 auto;
     display: flex;
@@ -209,6 +243,18 @@ hr{
     /* debug */
     background-color: yellow;
     border: black solid 2px;
+}
+
+.spiegazionedropbox {
+	width: 55%;
+	min-height: 50px;
+	margin: 73px auto 0;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 0, 0);
+	border: black solid 2px;
+
 }
 
 .info{
