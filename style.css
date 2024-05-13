@@ -381,8 +381,12 @@ hr {
 }
 
 .designit.uno {
-    padding: 200px 115px;
+    padding: 180px 115px;
     background-color: #a2d39b;
+}
+
+.designit.uno:hover{
+    border: #d1e9cd solid 20px;
 }
 
 .designit.due{
