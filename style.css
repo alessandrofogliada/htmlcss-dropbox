@@ -14,6 +14,10 @@ button {
     border: white;
 }
 
+body{
+    font-size: 30px;
+}
+
 .bold{
     font-weight: bold;
 }
@@ -64,14 +68,19 @@ button {
 }
 
 h1{
-    margin: 45px 191px 35px;
     width: 60%;
-    font-size: 50px;
+    font-size: 70px;
+    display: flex;
+}
+
+.freccia{
+    font-size: 60px;
+    margin-top: 63px;
 }
 
 .container{
     width: 65%;
-    min-height: 250px;
+    max-height: 380px;
     display: flex;
     /* debug */
     /* background-color: blueviolet; */
@@ -109,7 +118,7 @@ h1{
 }
 
 .picture{
-    height: 400px;
+    height: 470px;
 }
 
 .pianidropbox{
@@ -123,7 +132,8 @@ h1{
 }
 
 h2{
-    margin-bottom: 30px ;
+    margin: 180px 0 50px ;
+    font-size: 50px;
 }
 
 h3{
@@ -137,6 +147,7 @@ h4{
 .offer{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .pianidropbox span{
