@@ -9,7 +9,7 @@
 button {
 	background-color: #0061ff;
 	color: white;
-	min-width: 65px;
+	min-width: 180px;
 	min-height: 35px;
     border: white;
 }
@@ -52,6 +52,10 @@ body{
     /* background-color: yellow;
     color: black;
     border: black solid 2px; */
+}
+
+header button{
+    min-width: 65px;
 }
 
 
@@ -426,7 +430,7 @@ hr {
     color: #61082b;
 }
 
-.sfondo button {
+.sfondo.due button {
 	background-color: white;
 	height: 45px;
 	width: 250px;
