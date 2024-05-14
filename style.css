@@ -6,33 +6,44 @@
     box-sizing: border-box;
 }
 
-button {
+#button {
 	background-color: #0061ff;
 	color: white;
-	min-width: 180px;
-	min-height: 35px;
-    border: white;
+	min-width: 150px;
+	min-height: 60px;
+	border: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 body{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .bold{
     font-weight: bold;
 }
 
+
+
 /* Regole Header */
 
 .heading{
-    height: 70px;
+    height: 150px;
     width: 100%;
+    padding: 0 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* debug */
     /* background-color: blue;
     color: rgb(255, 255, 255); */
+}
+
+.heading a{
+    text-decoration: none;
+    color: black;
 }
  
 
@@ -45,6 +56,10 @@ body{
     border: black solid 2px; */
 }
 
+.heading .left img{
+    height: 40px;
+}
+
 .heading .right{
     min-height: 30px;
     width: calc(100%/3);
@@ -54,27 +69,27 @@ body{
     border: black solid 2px; */
 }
 
-header button{
-    min-width: 65px;
-}
 
 
 /* Regole Main */
 
+/* regole Jumbo */
 
 .sfondo {
-	min-height: 300px;
+	min-height: 800px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    background-color: #b4d0e7;
+	background-color: #b4d0e7;
+	flex-direction: column;
 }
 
-h1{
-    width: 60%;
-    font-size: 70px;
-    display: flex;
+h1 {
+	width: 60%;
+	font-size: 135px;
+	display: flex;
+	margin: 100px 0 80px;
 }
 
 .freccia{
@@ -84,14 +99,17 @@ h1{
 
 .container{
     width: 65%;
-    max-height: 380px;
     display: flex;
     /* debug */
     /* background-color: blueviolet; */
 }
 
+.container #button{
+    margin: 40px 0;
+}
+
 .container button{
-    margin: 27px 0;
+    margin: 40px 0;
 }
 
 .colonna button {
@@ -105,8 +123,7 @@ h1{
     width: 40%;
 	min-height: 225px;
     padding: 0 88px;
-    font-size: 20px;
-    line-height: 28px;
+    line-height: 43px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,15 +135,16 @@ h1{
 .layoutimg {
 	width: 60%;
 	min-height: 125px;
-
     /* debug */
     /* background-color: brown;
     border: black solid 2px; */
 }
 
-.picture{
-    height: 470px;
+.layoutimg img{
+    width: 100%;
 }
+
+/* regole piani dropbox */
 
 .pianidropbox{
     min-height: 600px;
@@ -138,14 +156,13 @@ h1{
     border: black solid 3px; */
 }
 
-h2{
-    margin: 180px 0 50px ;
-    font-size: 50px;
+.pianidropbox span{
+    margin-bottom: 55px;
 }
 
-h3 {
-	font-size: 35px;
-	padding: 35px;
+h2{
+    margin: 200px 0 110px ;
+    font-size: 80px;
 }
 
 h4 {
@@ -159,7 +176,8 @@ h4 {
 .bordotitolo{
     min-height: 15px;
     min-width: 30px;
-    border: solid grey 2px;
+    padding: 10px 0;
+    border: solid #d0d0d3 1px;
 }
 
 .offer{
@@ -176,7 +194,7 @@ h4 {
 	min-height: 300px;
 	width: calc(90%/3);
 	margin: 25px 0;
-	border: grey solid 1px;
+	border: #d0d0d3 solid 1px;
 	/* padding-left: 35px;*/
 }
 
@@ -192,6 +210,11 @@ h4 {
     padding: 35px;
 }
 
+div .colonna span a{
+    color: #0061ff;
+}
+
+
 .greytext{
     color: grey;
 }
@@ -201,13 +224,48 @@ hr {
 	margin: 45px 0 50px 35px;
 }
 
+.lista{
+    list-style-type: none;
+}
+
+.lista i{
+    padding-right: 24px;
+}
+
+.lista li{
+    display: flex;
+    line-height: 50px;
+}
+
+.lista.due i{
+    color: #0061ff;
+}
+
+
+.colonna #button{
+    width: 85%;
+    margin-left: 43px;
+    font-size: 26px;
+}
+
+
+/* Colonna reverce */
+
 .colonnareverce{
     min-height: 200px;
 	width: 100%;
     margin: 50px auto;
     /* debug */
    /* background-color: rgb(9, 79, 220); */
-    border: grey solid 3px;
+    border: solid #d0d0d3 1px;
+}
+
+
+h3 {
+	font-size: 45px;
+	padding: 41px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .colonnareverce p{
@@ -230,22 +288,25 @@ hr {
 } 
 
 .row .uno{
-    width: 60%;
+    width: 70%;
     height: 1000px;
     /* debug */
     /* background-color: orange; */
 }
 
+.row.uno img{
+    width: 100%;
+}
+
 .row .due {
 	width: 40%;
 	align-items: flex-start;
-	padding-left: 190px;
-    padding-bottom: 170px;
+	padding-left: 90px;
 	flex-direction: column;
 	justify-content: center;
 	font-size: 40px;
     /* debug */
-    /* background-color: blue; */
+	/* background-color: blue; */
 }
 
 .row h4{
@@ -322,7 +383,7 @@ hr {
 }
 
 .information{
-    width: 34%;
+    width: calc(100% / 3);
 	min-height: 250px;
     font-size: 40px;
     padding: 80px 80px;
@@ -339,6 +400,7 @@ hr {
     min-height: 250px;
     display: flex;
     margin-top: 120px;
+    width: 100%;
     /* debug */
     /* background-color: violet;
     border: black solid 2px; */
@@ -350,7 +412,7 @@ hr {
 }
 
  .sinistra{
-    width: 40%;
+    width: calc(100% / 3);
     min-height: 250px;
     display: flex;
     flex-wrap: wrap;
@@ -360,7 +422,7 @@ hr {
 } 
 
 .destra{
-    width: 40%;
+    width: calc(100% / 3);
     min-height: 250px; 
     display: flex;
     flex-wrap: wrap;
@@ -371,18 +433,19 @@ hr {
 
 
 .designit {
-	width: 50%;
 	height: 500px;
 	display: flex;
-	padding: 89px;
+    align-items: center;
+	/* padding: 89px; */
     /* debug */
     /* background-color: rgb(238, 255, 0);
 	border: black solid 2px; */
 }
 
 .designit.uno {
-    padding: 180px 115px;
+    /* padding: 180px 115px; */
     background-color: #a2d39b;
+    justify-content: center;
 }
 
 .designit.uno:hover{
@@ -390,38 +453,45 @@ hr {
 }
 
 .designit.due{
-    padding: 140px 140px; 
+    /* padding: 140px 140px;  */
     background-color: #61082b;
+    justify-content: center;
 }
 
 .designit.tre{
-     padding: 216px 100px;
+     /* padding: 216px 100px; */
      background-color: #0093ce;
+     justify-content: center;
 }
 
 .designit.quattro{
-    padding: 186px 125px ;
+    /* padding: 186px 125px ; */
     background-color: #ff1c1c;
+    justify-content: center;
 }
 
 .designit.cinque{
-    padding: 190px 120px;
+    /* padding: 190px 120px; */
     background-color:#d5001f;
+    justify-content: center;
 }
 
 .designit.sei{
-    padding: 226px 72px;
+    /* padding: 226px 72px; */
     background-color:#b4d0e7 ;
+    justify-content: center;
 }
 
 .designit.sette{
-    padding: 177px 132px;
+    /* padding: 177px 132px; */
     background-color: #0d2481;
+    justify-content: center;
 }
 
 .designit.otto {
-	padding: 100px 110px;
+	/* padding: 100px 110px; */
     background-color: #ffd830;
+    justify-content: center;
 }
 
 .sfondo h3{
